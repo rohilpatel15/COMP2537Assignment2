@@ -1,0 +1,11 @@
+<li> 
+    <%= user.username %> (<%= user.user_type %>)
+    <form action="/admin/promote" method="post" style="display: inline;">
+        <input type="hidden" name="email" value="<%= user.email %>">
+        <button class="btn btn-success rounded-pill px-3" type="submit">Promote</button>
+    </form>
+    <form action="/admin/demote" method="post" style="display: inline;">
+        <input type="hidden" name="email" value="<%= user.email %>">
+        <button class="btn btn-danger rounded-pill px-3" type="submit">Demote</button>
+    </form>
+</li>

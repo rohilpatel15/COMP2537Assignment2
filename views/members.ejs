@@ -1,0 +1,14 @@
+<%- include("template/header") %>
+
+<h1>Welcome, <%= username %>!</h1>
+<p>You are now a member of our site.</p>
+<div class="row mb-3 text-center">
+	<div class="col-md-4 themed-grid-col"><img src ="cr7.gif"/></div>
+	<div class="col-md-4 themed-grid-col"><img src ="lebronMeme.png"/></div>
+	<div class="col-md-4 themed-grid-col"><img src ="tooEasy.gif"/></div>
+  </div>
+<form action="/logout" method="post">
+	<button type="submit">Log Out</button>
+</form>
+
+<%- include("template/footer") %>

@@ -1,0 +1,18 @@
+<%- include("template/header") %>
+
+<% if (username) { %>
+	<h1>Hello, <%= username %>!</h1>
+	<p>You are currently logged in.</p>
+	<p><a href="/members">Go to members page</a></p>
+	<form action="/logout" method="post">
+		<button class="btn btn-secondary rounded-pill px-3" type="submit">Log Out</button>
+	</form>
+<% } else { %>
+	<h1>Welcome to My Site</h1>
+	<p>Please sign up or log in:</p>
+	<a href="/createUser">Sign up</a>
+	<a href="/login">Log in</a>
+<% } %>
+
+<%- include("template/footer") %>
+
